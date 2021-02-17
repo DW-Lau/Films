@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélection de film</title>
+</head>
+<body>
+
+    
+    <header> 
+        <h1> Mov-I-cker</h1>
+        <div id="switch">
+           <button> Nuit</button>
+
+        </div>
+    </header>
+     <section>
+         <article> 
+             <h2> Catégories :</h2>
+        <form method="post">
+        <label for="pet-select">Le type de film :</label>
+           <select id="monselect">
+            <option value="---" selected>---</option>
+             <option value="comedie">Comédie</option> 
+             <option value="horreur">Horreur</option>
+             <option value="sf">Science-Fiction</option>
+             <option value="superhero">Super Héro</option>
+             <option value="comrom">Comédie Romantique</option>
+              <option value="animation">Film d'animation</option>
+           </select>
+      <p>Films présents dans cette liste :<span id="listeSelection"></span></p>
+    </form>
+    </article>    
+    <aside>
+        <h2> <span class="lance"> Résultat</span></h2>
+                        <button id="change"> Et le film est :  </button>
+        <span id="resultatFilm"></span>
+    </aside>   
+
+                  
+            </section>
+</body>
+<script  type="text/javascript"  src="selecteur.js"></script>
+</html>
